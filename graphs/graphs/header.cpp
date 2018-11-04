@@ -3,19 +3,19 @@
 graph::graph(int size)
 {
 	this->size = size;
-	arr = new vertex[size];
+	arr = new vertex[size];						// for names of total vertexes arr which will be later used as disguise//
 	edge[6][6] = NULL;
 }
 
 void graph::AddVertex(int loc, char VerName)
 {
-	arr[loc].verName = VerName;
+	arr[loc].verName = VerName;			//to add vertexes like A,B,C,D
 	arr[loc].visited = 0;
 }
 
 void graph::AddEdge(int Start,int End)
 {
-	edge[Start][End] = 1;
+	edge[Start][End] = 1;				// to Add Edges like between A and B
 }
 
 void graph::PrintEdge()
@@ -40,10 +40,10 @@ void graph::PrintEdge()
 
 void graph::DFS()
 {
-	vertex *copy = arr;
+	vertex *copy = arr;			
 	char stack[10];
 	int top = -1;
-	int v = 0;
+	int v = 0;       
 	stack[++top] = copy[v].verName;
 	arr[0].visited = 1;
 	cout << endl  << "DFS:: ";
