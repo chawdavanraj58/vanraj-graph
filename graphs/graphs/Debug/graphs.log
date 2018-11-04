@@ -1,0 +1,5 @@
+﻿  header.cpp
+  source.cpp
+\\aug37\vanraj\graphs\graphs\source.cpp(4): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
+  graphs.vcxproj -> \\AUG37\vanraj\graphs\Debug\graphs.exe
